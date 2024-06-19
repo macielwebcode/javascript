@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Nome</title>
+</head>
+<body>
+
+    <section>
+        <h4>o número é: <spanv id="numTitle">0</span></h4>
+        <div id="texto">texto aqui</div>
+    </section>
+    
+    <script>
+        const nome = prompt('digite seu nome');
+        console.log(nome);
+        document.body.innerHTML += `o seu nome é ${nome}<br />`;
+        document.body.innerHTML += `o seu nome tem ${nome.length} (letra) <br />`;
+        document.body.innerHTML += `a segunda letra do seu nome é ${nome[1]} letras <br />`;
+        document.body.innerHTML += `primeiro indice da letra A ${nome.indexOf('a')}  <br />`;
+        document.body.innerHTML += `ultimo indice da letra A ${nome.lastIndexOf('a')}  <br />`;
+        document.body.innerHTML += `ultimas 3 letras do nome são ${nome.slice(-3)}  <br />`;
+        document.body.innerHTML += `palavras do nome são ${nome.split(' ')}  <br />`;
+        document.body.innerHTML += `nome em caixa alta ${nome.toLocaleUpperCase()}  <br />`;
+        document.body.innerHTML += `nome em caixa baixa ${nome.toLocaleLowerCase()}  <br />`;
+    </script>
+    <script src="numbers_maths.js"></script>
+</body>
+</html>
