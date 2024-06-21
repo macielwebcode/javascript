@@ -45,6 +45,7 @@ function createCalculadora(){
 
         btnParaDisplay(valor){
             this.display.value += valor;
+            this.display.focus();
         },
 
         limparDisplayText(){
