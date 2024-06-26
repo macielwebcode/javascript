@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <section class="container">
+        <h1>Formulário de Cadastro</h1>
+        <ul>
+            <li>Nenhum campo pode estar vazio</li>
+            <li> O nome de usuário só poderá conter letras e/ou números</li>
+            <li> O nome de usuário deverá ter entre 3 e 12 caracteres</li>
+            <li>A senha precisa ter entre 6 e 12 caracteres</li>
+        </ul>
+
+        <form action="/" method="POST" class="formulario">
+            <label>Nome</label>
+            <input type="text" name="nome" id="nome" class="nome validar">
+
+            <label>Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome" class="sobrenome validar">
+
+            <label>CPF</label>
+            <input type="text" name="cpf" id="cpf" class="cpfClass validar">
+
+            <label>Usuário</label>
+            <input type="text" name="username" id="username" class="usernameClass validar">
+
+            <label>Senha</label>
+            <input type="password" name="senha" id="senha" class="passClass validar">
+
+            <label>Repetir Senha</label>
+            <input type="password" name="repeatpass" id="repeatpass" class="passrepeatClass validar">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <script src="/formularioValidarComClasses/validaCPF.js"></script>
+    <script src="/formularioValidarComClasses/script.js"></script>
+    
+</body>
+</html>
