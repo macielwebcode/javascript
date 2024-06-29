@@ -1,0 +1,18 @@
+body {
+    margin: 0 auto;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 3%;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+}
