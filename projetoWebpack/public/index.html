@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Página Inicial</title>
 </head>
 <body>
+
+    <section class="container">
+        <h1>Gerador de CPF</h1>
+        <p>** atualizar a página para ver cada cpf ser gerado</p>
+        <div class="cpf-gerado"></div>
+    </section>
+
+    <section class="container">
+        <h1>Gerador de Senhas</h1>
+        <div class="resultSenhaGerada"></div>
+
+        <p>Quantidade de Caracteres: 
+            <input type="number" value="20" min="1" max="50" class="qntdeC">
+        </p>
+
+        
+        <p>Adicionar maiúsculas: 
+            <input type="checkbox" class="ChkCUppercase" checked>
+        </p>
+
+        <p>Adicionar minúsculas: 
+            <input type="checkbox" class="ChkLowecase" checked>
+        </p>
+
+        <p>Adicionar Números: 
+            <input type="checkbox" class="ChkNumber" checked>
+        </p>
+
+         <p>Adicionar Símbolos: 
+            <input type="checkbox" class="ChkSymbol" checked>
+        </p>
+
+        <button class="btnGerarSenha">Gerar sua Senha</button>
+
+
+    </section>
     
     <script src="./assets/js/bundle.js"></script>
 </body>
