@@ -37,5 +37,5 @@ async function executa(){
         console.log('erro no executa', error)
     }
    
-
+}
 executa();
