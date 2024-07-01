@@ -179,8 +179,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ geraSenha)
 /* harmony export */ });
-var rand = function rand(max, min) {
-  Math.floor(Math.random() * (max - min) + min);
+var rand = function rand(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
 };
 
 // para fazer os intervalos passados no rand, olhar tabela ASCII

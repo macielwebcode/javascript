@@ -1,6 +1,4 @@
-const rand = (max, min) => {
-    Math.floor(Math.random() * (max - min) + min);
-}
+const rand = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
 // para fazer os intervalos passados no rand, olhar tabela ASCII
 
