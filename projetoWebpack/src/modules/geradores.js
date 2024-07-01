@@ -15,16 +15,15 @@ export default function geraSenha(qntdeCaracteres, maiusculas, minusculas, numer
     const senhaArray = [];
     qntdeCaracteres = Number(qntdeCaracteres);
 
-    console.log(qntdeCaracteres)
 
-    for(let i = 0; i <= qntdeCaracteres; i++){
+    for(let i = 0; i < qntdeCaracteres; i++){
         maiusculas && senhaArray.push(geraMaiuscula());
         minusculas && senhaArray.push(geraMinuscula());
         numeros && senhaArray.push(geraNumero());
         simbolos && senhaArray.push(geraSimbolo());
     }
 
-
+    
     return senhaArray.join('').slice(0, qntdeCaracteres);
     
 }

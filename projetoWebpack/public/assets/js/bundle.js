@@ -201,8 +201,7 @@ var geraSimbolo = function geraSimbolo() {
 function geraSenha(qntdeCaracteres, maiusculas, minusculas, numeros, simbolos) {
   var senhaArray = [];
   qntdeCaracteres = Number(qntdeCaracteres);
-  console.log(qntdeCaracteres);
-  for (var i = 0; i <= qntdeCaracteres; i++) {
+  for (var i = 0; i < qntdeCaracteres; i++) {
     maiusculas && senhaArray.push(geraMaiuscula());
     minusculas && senhaArray.push(geraMinuscula());
     numeros && senhaArray.push(geraNumero());

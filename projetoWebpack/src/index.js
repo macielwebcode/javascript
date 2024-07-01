@@ -11,9 +11,13 @@ import './assets/css/style.css';
     
     const cpfGeradoDiv = document.querySelector('.cpf-gerado');
     cpfGeradoDiv.innerHTML = gera.geraNovoCPF();
+
+    
 })();
 
 FormGeraSenha();
+
+
 
 /* const nome = 'berlipe';
 
